@@ -1,0 +1,14 @@
+/* App.css */  
+  .live-tag {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    z-index: 1;
+  }
+  
+  .viewers-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }

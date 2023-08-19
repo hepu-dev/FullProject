@@ -1,4 +1,4 @@
-const Product = require('../models/product');
+import Product from '../models/product.js';
 
 class ProductService {
   async getProductsByVideoId(videoId) {
@@ -10,4 +10,4 @@ class ProductService {
   }
 }
 
-module.exports = new ProductService();
+export default new ProductService();

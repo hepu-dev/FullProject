@@ -1,3 +1,10 @@
 # Full project gigih 3.0
 - Backend
-- Frontend (Not started)
+- Frontend
+
+Tokoplay - Dokumentasi
+Basic project using MERN stack
+
+### The hosted URL . 
+- 
+

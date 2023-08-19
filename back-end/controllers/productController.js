@@ -1,10 +1,10 @@
-const { getProductsByVideoId } = require("../services/productService");
+import ProductService from "../services/productService.js";
 
 class ProductController {
   async getProductList(req, res, next) {
     const { videoId } = req.params;
     try {
-      const products = await getProductsByVideoId(videoId);
+      const products = await ProductService.getProductsByVideoId(videoId);
       res.json(products);
     } catch (err) {
       next(err);
@@ -12,4 +12,4 @@ class ProductController {
   }
 }
 
-module.exports = new ProductController();
+export default new ProductController();

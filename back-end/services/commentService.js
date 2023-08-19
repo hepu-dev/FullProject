@@ -1,4 +1,4 @@
-const Comment = require("../models/comment");
+import Comment from "../models/comment.js";
 
 class CommentService {
   async getCommentsByVideoId(videoId) {
@@ -18,4 +18,4 @@ class CommentService {
   }
 }
 
-module.exports = new CommentService();
+export default new CommentService();
