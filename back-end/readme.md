@@ -38,21 +38,21 @@ npm start
 II. Database Structure:
 
 1. `videos` collection:
-     - `videoId`: A unique identifier for each video from YouTube.
-     - `thumbnailUrl`: URL of the image thumbnail for the video.
+     - `videoId`: A unique identifier for each video sourced from YouTube.
+     - `thumbnailUrl`: The URL of the video's thumbnail image.
 
 2. `products` collection:
      - `productId`: A unique identifier for each product.
-     - `videoId`: A reference to the corresponding video's `videoId` in the `videos` collection.
-     - `link`: The link to the product related to the video.
+     - `videoId`: A reference to the corresponding `videoId` of the video in the `videos collection.
+     - `link`: The link to the product associated with the video.
      - `title`: The title or name of the product.
      - `price`: The price of the product.
 
 3. `comments` collection:
-     - `videoId`: A reference to the corresponding video's `videoId` in the `videos` collection.
-     - `username`: The name of the user who submitted the comment.
+     - `videoId`: A reference to the `videoId` of the related video in the `videos` collection.
+     - `username`: The name of the user who posted the comment.
      - `comment`: The user's comment.
-     - `timestamp`: The timestamp indicating when the comment was submitted (defaulted to the current date and time).
+     - `timestamp`: The timestamp indicating when the comment was posted (automatically set to the current date and time).
 
 
 III. API Structure:
@@ -60,20 +60,20 @@ III. API Structure:
 1. Video Endpoint:
    - URL: `/api/videos`
    - HTTP Method: GET
-   - Purpose: Fetches a list of videos with their videoIds and thumbnail URLs.
+   - Purpose: This endpoint is used to retrieve a list of videos along with their corresponding videoIds and thumbnail URLs.
 
 2. Product Endpoint:
    - URL: `/api/products/:videoId`
    - HTTP Method: GET
-   - Purpose: Fetches a list of products related to a specific video based on its `videoId`.
+   - Purpose: This endpoint allows you to fetch a list of products related to a specific video identified by its `videoId`.
 
 3. Comment Endpoint:
    - URL: `/api/comments/:videoId`
    - HTTP Method: GET
-   - Purpose: Fetches a list of comments for a specific video based on its `videoId`.
+   - Purpose: This endpoint retrieves a list of comments for a specific video identified by its `videoId`.
    - URL: `/api/comments`
    - HTTP Method: POST
-   - Purpose: Submits a new comment for a specific video and saves it in the database.
+   - Purpose: This endpoint enables users to submit new comments for a specific video, which will be saved in the database.
 
 IV. List API Requests and Responses:
 
