@@ -14,12 +14,12 @@ const contentStyle = {
   textAlign: 'center',
   minHeight: 120,
   lineHeight: '120px',
-  color: '#fff',
+  color: '#000000',
   backgroundColor: '#7FFFD4',
 };
 const footerStyle = {
   textAlign: 'center',
-  color: '#fff',
+  color: '#000000',
   backgroundColor: '#F0FFFF',
 };
 const App = () => (
@@ -34,7 +34,7 @@ const App = () => (
       <Header style={headerStyle}>
         <AddNav />
       </Header>
-      <Content style={{ padding: '30px 50px', backgroundColor: '#108ee9'}}>
+      <Content style={{ padding: '30px 50px', backgroundColor: '#7FFFD4'}}>
       <Content style={contentStyle}>
         <AddYoutubeList />
       </Content>
