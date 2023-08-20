@@ -43,7 +43,7 @@ const App = () => (
       <Header style={headerStyle}>
         <AddNav />
       </Header>
-      <Content style={{ padding: '0 50px', backgroundColor: '#108ee9'}}>
+      <Content style={{ padding: '0 50px', backgroundColor: '#7FFFD4'}}>
       <Layout hasSider>
         <Sider style={siderStyle}>
           <AddSider />
