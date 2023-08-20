@@ -4,7 +4,3 @@
 
 Tokoplay - Dokumentasi
 Basic project using MERN stack
-
-### The hosted URL . 
-- 
-
